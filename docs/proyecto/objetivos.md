@@ -4,7 +4,7 @@
 
 Este documento recoge los objetivos del proyecto **Groove**, una aplicación web orientada al registro, valoración y organización de experiencias musicales.
 
-Groove se desarrollará como un proyecto personal, de manera paralela a los estudios universitarios (Ingeniería Informáyica del Software).
+Groove se desarrollará como un proyecto personal, de manera paralela a los estudios universitarios (Ingeniería Informática del Software).
 
 Su finalidad no será únicamente construir una aplicación funcional, sino también aplicar conocimientos adquiridos durante la carrera, aprender nuevas tecnologías y adquirir experiencia en el desarrollo completo de un producto software.
 

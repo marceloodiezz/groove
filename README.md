@@ -65,6 +65,17 @@ El primer objetivo será obtener **Groove v0.1 (MVP)**, que incluirá:
 - Aplicación web responsive y funcional.
 Las versiones posteriores incorporarán personalización, funcionalidades sociales, descubrimiento musical y nuevas integraciones.
 
+
+## 📚 Documentación
+
+La documentación inicial del proyecto se encuentra disponible en:
+
+- [Objetivos del proyecto](docs/proyecto/objetivos.md)
+- [Alcance del MVP — Groove v0.1](docs/proyecto/alcance-mvp.md)
+
+La documentación se ampliará progresivamente con el diseño de la interfaz, el modelo de dominio y las decisiones arquitectónicas.
+
+
 ## 👨‍💻 Autor
 
 **Marcelo Díez Domínguez**
