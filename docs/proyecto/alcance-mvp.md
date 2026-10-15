@@ -29,6 +29,8 @@ El sistema permitirá:
 - Registrar usuarios mediante nombre de usuario, correo electrónico y contraseña.
 - Validar los datos y evitar nombres de usuario y correos duplicados.
 - Iniciar y cerrar sesión de forma segura.
+- Mantener la sesión autenticada entre accesos desde un mismo dispositivo o navegador, mientras continúe siendo válida.
+- Redirigir al usuario autenticado a la página principal.
 - Consultar un perfil personal.
 - Modificar el nombre visible, la descripción y otros datos permitidos.
 - Proteger los recursos personales frente a accesos no autorizados.
@@ -38,6 +40,8 @@ El sistema permitirá:
 El sistema permitirá:
 
 - Buscar álbumes y EPs por nombre o artista.
+- Buscar conciertos registrados en la aplicación mediante sus datos disponibles, como artista, fecha o ubicación.
+- Buscar y consultar ediciones físicas registradas o identificadas en el catálogo de Groove.
 - Consultar resultados con título, artista, portada y año, cuando estén disponibles.
 - Acceder a la ficha de una publicación musical.
 - Identificar de forma estable artistas y álbumes.
@@ -47,6 +51,12 @@ El sistema permitirá:
 - Gestionar errores y respuestas incompletas de los servicios musicales externos.
 
 El catálogo se alimentará de fuentes externas, principalmente MusicBrainz y Cover Art Archive.
+
+La búsqueda de conciertos y ediciones físicas durante el MVP se limitará a la información disponible en la aplicación.
+
+Los conciertos podrán registrarse manualmente y las ediciones físicas podrán incorporarse aunque no se conozcan todos sus datos.
+
+La integración con catálogos externos especializados en conciertos y ediciones físicas podrá incorporarse en versiones posteriores.
 
 ### 3.3. Diario musical
 
@@ -92,6 +102,7 @@ El usuario podrá:
 
 El sistema distinguirá entre el álbum, su edición comercial y la copia física que pertenece al usuario.
 
+
 ### 3.6. Perfil personal
 
 El sistema proporcionará:
@@ -99,9 +110,42 @@ El sistema proporcionará:
 - Un perfil con la información básica del usuario.
 - Un resumen del número de álbumes registrados, conciertos y elementos físicos.
 - Una sección de actividad reciente.
-- Accesos a las diferentes áreas personales de la aplicación.
+- Acceso al diario musical y al historial de escuchas.
+- Acceso al historial de conciertos y experiencias musicales.
+- Acceso a la colección física personal.
+- Acceso a los ajustes y a la edición de la información de cuenta.
 
-### 3.7. Aplicación web e infraestructura
+El perfil constituirá el espacio central de la identidad musical del usuario.
+
+En versiones posteriores incorporará álbumes favoritos, ListenList, estadísticas avanzadas y funcionalidades sociales.
+
+
+### 3.7. Navegación y actividad personal
+
+Groove estará organizado en dos zonas principales:
+
+- **Zona pública:** Bienvenida, Registro e Inicio de sesión.
+- **Zona privada:** funcionalidades disponibles para usuarios autenticados.
+
+La navegación principal de la zona privada estará formada por cinco elementos:
+
+1. **Inicio:** página principal con un resumen de la actividad musical personal y accesos a las funcionalidades.
+2. **Buscar:** búsqueda y consulta de contenido musical.
+3. **Añadir:** acción rápida para registrar escuchas, conciertos y elementos físicos.
+4. **Actividad:** historial cronológico de las acciones musicales del usuario.
+5. **Perfil:** información personal, diario musical, conciertos y colección física.
+
+La acción Añadir permitirá iniciar las operaciones correspondientes desde un único punto, sin impedir que puedan realizarse también desde las fichas de contenido.
+
+La sección Actividad mostrará inicialmente los registros personales del usuario y mantendrá esta información privada.
+
+En versiones posteriores podrá incorporar un historial de actividad de usuarios seguidos.
+
+La navegación será adaptable a dispositivos móviles y de escritorio.
+
+La estructura detallada se encuentra documentada en el [Mapa de navegación](../diseno/navegacion.md).
+
+### 3.8. Aplicación web e infraestructura
 
 La primera versión deberá contar con:
 
@@ -130,12 +174,14 @@ Las siguientes características no formarán parte del MVP obligatorio.
 - Información avanzada de ediciones.
 - Fotografías de conciertos.
 - Mejoras de búsqueda y filtrado.
+- Visualización del diario musical mediante calendario.
 
 ### 4.2. Funcionalidades sociales — Versión 0.3
 
 - Perfiles públicos.
 - Seguimiento de usuarios.
-- Feed de actividad.
+- Feed cronológico de actividad de usuarios seguidos.
+- Integración de actividad social destacada en la página de Inicio.
 - Likes y comentarios.
 - Publicación de reseñas.
 - Descubrimiento de usuarios.
@@ -211,6 +257,14 @@ El MVP se considerará completado cuando:
 - [ ] La aplicación pueda ejecutarse localmente.
 - [ ] Exista un despliegue funcional.
 - [ ] El repositorio incluya documentación suficiente para instalar y comprender el sistema.
+- [ ] Una sesión válida permita acceder directamente a la zona privada.
+- [ ] El usuario autenticado acceda a Inicio como página principal.
+- [ ] La navegación principal incluya Inicio, Buscar, Añadir, Actividad y Perfil.
+- [ ] El usuario pueda iniciar el registro de escuchas, conciertos y elementos físicos desde Añadir.
+- [ ] Se puedan buscar conciertos registrados en la aplicación.
+- [ ] Se puedan buscar y consultar ediciones físicas disponibles en Groove.
+- [ ] La sección Actividad muestre cronológicamente los registros personales.
+- [ ] El Perfil permita acceder al Diario, Conciertos y Colección.
 
 ## 7. Límites del desarrollo
 

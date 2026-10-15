@@ -30,6 +30,20 @@ Groove se organiza en tres bloques principales:
 - Registrar varias copias de una misma publicación.
 - Consultar, editar y organizar la colección personal.
 
+## 🧭 Navegación
+
+La interfaz de Groove estará organizada en cinco opciones principales:
+
+- **Inicio:** resumen personal y, en futuras versiones, descubrimiento musical.
+- **Buscar:** búsqueda de álbumes, EPs, conciertos y ediciones físicas.
+- **Añadir:** registro rápido de escuchas, conciertos y elementos físicos.
+- **Actividad:** historial cronológico de acciones musicales personales y, posteriormente, sociales.
+- **Perfil:** identidad musical, diario de escuchas, conciertos y colección física.
+
+El desarrollo combinará una experiencia de diario musical personal con una futura red social centrada en la música.
+
+Las funcionalidades sociales se incorporarán progresivamente, manteniendo la utilidad individual de la aplicación.
+
 ## 🛠️ Tecnologías
 
 Las tecnologías previstas para el desarrollo son:
@@ -63,6 +77,9 @@ El primer objetivo será obtener **Groove v0.1 (MVP)**, que incluirá:
 - Gestión de colecciones físicas.
 - Perfil personal y resumen de actividad.
 - Aplicación web responsive y funcional.
+- Navegación principal con cinco elementos.
+- Acción rápida para registrar experiencias musicales.
+- Historial cronológico de actividad personal.
 Las versiones posteriores incorporarán personalización, funcionalidades sociales, descubrimiento musical y nuevas integraciones.
 
 
@@ -72,6 +89,7 @@ La documentación inicial del proyecto se encuentra disponible en:
 
 - [Objetivos del proyecto](docs/proyecto/objetivos.md)
 - [Alcance del MVP — Groove v0.1](docs/proyecto/alcance-mvp.md)
+- [Mapa de navegación](docs/diseno/navegacion.md)
 
 La documentación se ampliará progresivamente con el diseño de la interfaz, el modelo de dominio y las decisiones arquitectónicas.
 
